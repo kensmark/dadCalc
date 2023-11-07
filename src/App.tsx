@@ -11,8 +11,6 @@ import EquipmentLayout from './Components/EquipmentLayout/EquipmentLayout';
 import { AttributeProvider, useAttributes } from './Components/AttributeContext/AttributeContext';
 import ReadAttributes from './Components/ReadAttributes';
 
-
-
 const App: React.FC = () => {
 
   return (
@@ -21,7 +19,7 @@ const App: React.FC = () => {
       <AttributeProvider>
         <EquipmentLayout/>
         <ReadAttributes /> 
-    </AttributeProvider>
+      </AttributeProvider>
       </div>
     </div>
 
