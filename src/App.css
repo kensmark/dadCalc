@@ -1,0 +1,23 @@
+body, html {
+  background-color: #181818;
+  }
+
+.app {
+  width: 125%;
+  background-color: #181818;
+  border-right: 2px solid #e5ce21; /* This adds a 2px wide solid black right border */
+}
+
+.right_panel {
+  background-color: #7692ca;
+  float: right;
+}
+
+
+/* App.css */
+
+
+
+
+
+

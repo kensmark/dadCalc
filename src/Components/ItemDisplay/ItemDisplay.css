@@ -1,0 +1,90 @@
+
+.item-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+.item-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5ce21;
+    width: fit-content;
+    height: fit-content;
+    position: relative; /* added */
+    flex-direction: column;  /* Ensure children are stacked vertically */
+
+}
+
+.main-title {
+    font-family: 'Cinzel', serif; /* Specify the font family */
+    font-size: 20px; /* Set the font size */
+    color: #fcf9f9; /* Text color */
+    line-height: 1; /* Space between lines of text */
+    text-align: center; /* Text alignment: left, center, right, justify */
+    letter-spacing: 0.5px; /* Space between characters */
+    border-bottom: 2px solid #b5b5b5; /* thickness, style, and color of the underline */
+    margin-bottom: 10px; /* reduce this value to bring the title closer to the box */
+  }
+.image-box {
+    width: 150px;
+    display: block; /* change from flex to block */
+    position: relative; /* make this a positioned ancestor */
+}
+
+.description-box {
+    position: absolute; /* makes it overlay on top of the image */
+    top: 0; /* start from the top of the image */
+    left: 0; /* start from the left of the image */
+    width: 100%; /* make it the full width of the image */
+    height: 100%; /* make it the full height of the image */
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    justify-content: flex-start; /* start children from the top */
+    align-items: center; /* center children horizontally */
+    background-color: rgba(52, 52, 52, 0.2); /* added some transparency to see the image underneath */
+
+}
+
+.description-box h2 {
+    margin-bottom: 5px;
+}
+
+.description-box button {
+    width: 130px;
+    height: 5px; /* adjusted from 5px to 50px to give some space for the plus sign */
+    display: flex; /* turn button into a flex container */
+    justify-content: center; /* center content horizontally */
+    align-items: center; /* center content vertically */
+    border: none; /* optional: remove any default border */
+    background-color: #636363; /* optional: match the background color of .description-box */
+    margin-top: 5px;
+}
+
+
+
+.item-text {
+    font-family: 'Arial', sans-serif; /* Specify the font family */
+    font-size: 16px; /* Set the font size */
+    color: #ffffff; /* Text color */
+    line-height: 1.5; /* Space between lines of text */
+    text-align: center; /* Text alignment: left, center, right, justify */
+    letter-spacing: 0.5px; /* Space between characters */
+    padding: 2px;
+    
+
+}
+
+.attribute-input {
+    width: 50px;  /* Adjust this value to your preference */
+    line-height: 10px;  /* Adjust this value to match the height */
+
+}
+
+.attribute-dropdown {
+    width: 100px;  /* Adjust this value to your preference */
+    line-height: 100px;  /* Adjust this value to match the height */
+}

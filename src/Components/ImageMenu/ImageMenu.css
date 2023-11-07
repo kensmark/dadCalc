@@ -1,0 +1,25 @@
+/* ImageMenu.css */
+
+.image-menu {
+    display: grid;
+    width: 30%;            /* Adjust this based on how wide you want the menu to be. */
+    margin-left: auto;     /* This pushes the menu to the right */
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid white;
+  }
+  
+  
+  .image-item {
+    overflow: hidden;
+    border: 2px solid white;
+
+  }
+  
+  .image-item img {
+    width: 100%; /* Make sure the images take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+  }
+  

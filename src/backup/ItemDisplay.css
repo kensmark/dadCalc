@@ -1,0 +1,67 @@
+.item-display {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center;
+    border: 2px solid white;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.image-box {
+    width: 150px;
+    height: auto;
+    flex-shrink: 0;
+  /*  margin-right: 20px;*/
+    float: left; 
+    border-right: 2px solid white; /* Adds a line down the middle between the image and the attributes */
+}
+
+.description-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #343434;
+    height:220px; /* or whatever width you want. */
+    max-height:220px; /* or whatever width you want. */
+    display: inline-block;
+}
+
+.description-box h2 {
+    margin-bottom: 10px;
+}
+
+.description-box button {
+    width: 130px;
+    height: 5px; /* adjusted from 5px to 50px to give some space for the plus sign */
+    display: flex; /* turn button into a flex container */
+    justify-content: center; /* center content horizontally */
+    align-items: center; /* center content vertically */
+    border: none; /* optional: remove any default border */
+    background-color: #636363; /* optional: match the background color of .description-box */
+}
+
+
+
+.item-text {
+    font-family: 'Arial', sans-serif; /* Specify the font family */
+    font-size: 16px; /* Set the font size */
+    color: #ffffff; /* Text color */
+    line-height: 1.5; /* Space between lines of text */
+    text-align: center; /* Text alignment: left, center, right, justify */
+    letter-spacing: 0.5px; /* Space between characters */
+    padding: 2px;
+
+}
+
+.attribute-input {
+    width: 40px;  /* Adjust this value to your preference */
+    
+}
+
+.attribute-dropdown {
+    width: 80px;  /* Adjust this value to your preference */
+}
